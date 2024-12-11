@@ -1,0 +1,92 @@
+/*
+
+*/
+
+.margenes{
+    margin-top: 25px;
+}
+
+footer {
+    background-color: #aaa;
+}
+
+h1,
+h2 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.hero {
+    background: url(../Img/pantallaprincipalprueba.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 400px;
+    color: white;
+
+}
+
+.lista-novedades {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-novedades li {
+    margin: 4px 0;
+}
+
+.lista-novedades li a {
+    background-color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover {
+    color: #212529;
+    background-color: #dadada;
+}
+
+.lista-novedades li a img {
+    width: 120px;
+    height: 50px;
+    filter: grayscale();
+    transition: all .2s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0,7;
+}
+
+.lista-novedades li a:hover img {
+    filter: none;
+    margin-right: 1rem;
+    opacity: 1;
+}
+
+.testimonios {
+    background-color: #dadada;
+    padding-bottom: 4rem !important;
+}
+
+.testimonio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.staff {
+    background-color: #efefef;
+}
+
+.mapa iframe{
+    width: 100%;
+    aspect-ratio: 1.2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
+}

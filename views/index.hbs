@@ -10,20 +10,7 @@
     </div>
 </div>
 
-<div class="row my-3">
-    <div id="novedades" class="col-md-5 offset-md-2 py-3">
-        <h2>Novedades</h2>
-        <ul class="lista-novedades">
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
-                        src="../Img/imagenes pequeñas 1.jfif">Nuevas receta 1</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
-                        src="../Img/imagenes pequeñas 2.jfif">Nuevas receta 2</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img
-                        src="../Img/imagenes pequeñas 3.jfif">Nuevas receta 3</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4"><img
-                        src="../Img/imagenes pequeñas 4.webp">Nuevas receta 4</a></li>
-        </ul>
-    </div>
+<div class="row">
     <div class="col-md-3 my-3">
         <div class="rounded py-35 testimonios">
             <h2 class="text-center">Opiniones</h2>
@@ -70,174 +57,124 @@
         </div>
     </div> <!--  FIN DE LA FILA TESTIMONIOS  -->
 
-</div> <!--  CIERRE DE FILA  -->
-
-
-<!--  INICIO DE MODEL - NUEVA RECETA 1  -->
-<div>
-    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="exampleModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Nueva receta 1</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Subtitulo</h3>
-                    <p>blah blah blah blah blah </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
+    <div class="col my-3">
+        {{#each novedades}}
+        <div id="novedades" class="col-md-5 offset-md-2 py-3">
+            <h2>Novedades</h2>
+            <ul class="lista-novedades">
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src="{{imagen}}">{{titulo}}</a></li>
+            </ul>
         </div>
-    </div>
-</div>
-
-<!-- NUEVA RECETA 2 -->
-
-<div>
-    <div class="modal fade" id="exampleModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="exampleModal2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Nueva receta 2</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Subtitulo</h3>
-                    <p>blah blah blah blah blah </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- NUEVA RECETA 3 -->
-
-<div>
-    <div class="modal fade" id="exampleModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="exampleModal3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Nueva receta 3</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Subtitulo</h3>
-                    <p>blah blah blah blah blah </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- NUEVA RECETA 4 -->
-
-<div>
-    <div class="modal fade" id="exampleModal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="exampleModal4" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Nueva receta 4</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h3>Subtitulo</h3>
-                    <p>blah blah blah blah blah </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--    FIN DE MODEL    -->
-
-<div id="historia" class="row align-items-center py-4">
-    <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
-        <img src="../Img/historia 2.jpg" alt="historia 1" class="img-fluid">
-    </div>
-    <div class="col-lg-2 col-md-3 d-none d-sm-block">
-        <img src="../Img/historia 3.jpg" alt="historia 2" class="img-fluid">
-    </div>
-    <div class="col-12 d-sm-none">
-        <img src="../Img/historia 1.webp" alt="historia 3" class="img-fluid">
-    </div>
-    <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
-        <h2>Historia</h2>
-        <p>Era un restaurante de la familia Alvarez (familia la cual forma parte del diseñador de esta pagina).
-            Desafortunadamente fue a la quiembra luego de razones que no hace falta especificar.
-            Esta pagina es en un caso en lo que hubiese ayudado un poco con ese tema del restaurante.</p>
-    </div>
-</div>
-<div id="nosotros" class="row align-items-stretch my-3 staff py-4">
-    <div class="col-lg-8 offset-lg-2 ">
-        <h2>Nosotros</h2>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="../Img/persona 1.webp" class="card-img-top" alt="Programador">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to
-                            additional content. This content is a little bit longer.</p>
+        <div>
+            <div class="modal fade" id="Modal{{id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="exampleModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">{{titulo}}</h1>
+                            <img src="{{imagen}}" width="40%" />
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h4>{{subtitulo}}</h4>
+                            <p>{{cuerpo}}</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="../Img/persona 2.avif" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to
-                            additional content. This content is a little bit longer.</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+    <!-- NUEVA RECETA 2 -->
+
+
+
+    <!-- NUEVA RECETA 3 -->
+
+
+
+    <!-- NUEVA RECETA 4 -->
+
+
+    <!--    FIN DE MODEL    -->
+
+    <div id="historia" class="row align-items-center py-4">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+            <img src="../Img/historia 2.jpg" alt="historia 1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+            <img src="../Img/historia 3.jpg" alt="historia 2" class="img-fluid">
+        </div>
+        <div class="col-12 d-sm-none">
+            <img src="../Img/historia 1.webp" alt="historia 3" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>Historia</h2>
+            <p>Era un restaurante de la familia Alvarez (familia la cual forma parte del diseñador de esta pagina).
+                Desafortunadamente fue a la quiembra luego de razones que no hace falta especificar.
+                Esta pagina es en un caso en lo que hubiese ayudado un poco con ese tema del restaurante.</p>
+        </div>
+    </div>
+    <div id="nosotros" class="row align-items-stretch my-3 staff py-4">
+        <div class="col-lg-8 offset-lg-2 ">
+            <h2>Nosotros</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/persona 1.webp" class="card-img-top" alt="Programador">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="../Img/persona 3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to
-                            additional content. This content is a little bit longer.</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/persona 2.avif" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="../Img/persona 4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural
-                            lead-in
-                            to
-                            additional content. This content is a little bit longer.</p>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/persona 3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/persona 4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-</div>
 <div id="conocemos" class="row py-4">
     <div class="col-md-4 offset-md-2">
         <h2>Visitanos</h2>
